@@ -1,0 +1,17 @@
+[project]
+name = "worldcup-pipeline"
+version = "0.2.0"
+description = "World Cup 2026 ETL pipeline - football-data.org to PostgreSQL"
+requires-python = ">=3.11"
+dependencies = [
+  "requests",
+  "psycopg2-binary",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
