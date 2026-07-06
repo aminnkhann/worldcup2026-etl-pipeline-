@@ -11,3 +11,13 @@ __pycache__/
 
 # Test artifacts
 .pytest_cache/
+
+# Local ETL artifacts
+data/raw/
+logs/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/

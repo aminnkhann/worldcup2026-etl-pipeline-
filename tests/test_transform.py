@@ -5,7 +5,7 @@ These only exercise pure functions (no network, no database), so they
 run instantly and don't need a .env file or a running Postgres.
 """
 
-from transform import (
+from worldcup_pipeline.transform import (
     _date_only,
     _display_name,
     _score_side,

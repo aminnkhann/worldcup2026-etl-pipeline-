@@ -12,16 +12,16 @@ from pathlib import Path
 import psycopg2
 from psycopg2.extras import execute_values
 
-from config import DB_CONFIG
-from transform import _json
+from .config import get_settings
+from .transform import _json
 
 logger = logging.getLogger(__name__)
 
-SCHEMA_PATH = Path(__file__).resolve().parent / "schema.sql"
+SCHEMA_PATH = Path(__file__).resolve().parents[2] / "schema.sql"
 
 
 def _connect():
-    return psycopg2.connect(**DB_CONFIG)
+    return psycopg2.connect(**get_settings().db_config)
 
 
 def apply_schema():

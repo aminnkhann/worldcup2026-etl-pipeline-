@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: worldcup-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME:-worldcup2026}
+      POSTGRES_USER: ${DB_USER:-worldcup}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-worldcup_password}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-worldcup} -d ${DB_NAME:-worldcup2026}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
