@@ -127,9 +127,9 @@ foreign keys remain valid.
 The existing Power BI report is the final analytics layer for this project.
 The screenshots below use the same names as the Power BI report pages.
 
-### Team Overview
+### Tournament Overview
 
-![Team Overview](assets/screenshots/team_overview.jpg)
+![Tournament Overview](assets/screenshots/tournament_overview.jpg)
 
 ### Group Stage
 
