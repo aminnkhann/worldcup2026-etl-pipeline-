@@ -11,6 +11,17 @@ raw-data lineage, deterministic cleansing, explicit quality gates, idempotent
 warehouse loading, workflow orchestration, semantic modeling, DAX design, and
 dashboard delivery.
 
+## Live Power BI Report
+
+Explore the published interactive report:
+
+**[Open the FIFA World Cup 2026 Power BI project](https://l1nq.com/46jp3nk)**
+
+The live report is the presentation layer of this project, where the curated
+PostgreSQL model, analytical relationships, and DAX measures are translated
+into an interactive tournament experience.
+
+
 ![Power BI landing page](assets/screenshots/Landing%20Page.png)
 
 ## Table Of Contents
@@ -31,6 +42,7 @@ dashboard delivery.
 - [Testing And Engineering Quality](#testing-and-engineering-quality)
 - [Known Limitations And Design Decisions](#known-limitations-and-design-decisions)
 - [Repository Structure](#repository-structure)
+- [Contact](#contact)
 
 ## The Project Story
 
@@ -1069,3 +1081,18 @@ the default feedback loop fast and deterministic.
 - scheduled full and incremental orchestration with Airflow;
 - operational monitoring and failure visibility;
 - a complete engineering-to-analytics narrative delivered through Power BI.
+
+## Contact
+
+For questions or feedback about this project, contact
+**[amin.data.eng@gmail.com](mailto:amin.data.eng@gmail.com)**.
+
+Topics are welcome across the complete solution, including:
+
+- API ingestion, retry strategies, and source-data lineage;
+- Python ETL architecture, cleansing, and transformation rules;
+- data-quality controls, accuracy, and reconciliation;
+- PostgreSQL schema design, indexing, JSONB, and analytical modeling;
+- Apache Airflow orchestration, scheduling, monitoring, and Docker deployment;
+- Power BI semantic modeling, relationships, report design, and DAX measures;
+- technical collaboration, portfolio feedback, and data engineering opportunities.
