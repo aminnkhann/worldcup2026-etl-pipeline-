@@ -1,0 +1,15 @@
+ARG AIRFLOW_VERSION=2.10.5
+FROM apache/airflow:${AIRFLOW_VERSION}-python3.11
+
+ARG AIRFLOW_VERSION
+
+USER root
+WORKDIR /opt/airflow/project
+COPY . .
+RUN mkdir -p data/raw logs \
+    && chown -R airflow:0 /opt/airflow/project
+
+USER airflow
+RUN pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" .
+
+ENV PYTHONPATH=/opt/airflow/project/src
